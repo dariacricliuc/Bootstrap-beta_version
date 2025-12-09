@@ -1,0 +1,255 @@
+/* ===== ОСНОВНЫЕ СТИЛИ ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    padding-top: 80px; /* Для фиксированного header */
+}
+
+/* ===== НАВИГАЦИЯ ===== */
+.navbar {
+    background-color: #bcf1f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 80px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #002f5b !important;
+    font-size: 1.2rem;
+}
+
+.nav-link {
+    color: #002f5b !important;
+    font-weight: 600;
+    padding: 10px 15px !important;
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    color: #007FFF !important;
+    background-color: rgba(0, 127, 255, 0.1);
+    border-radius: 4px;
+}
+
+.navbar-toggler {
+    border-color: #002f5b;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 47, 91, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ===== КОНТЕНТ КОНТАКТОВ ===== */
+.contacts-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contacts-title {
+    color: #002f5b;
+}
+
+.contacts-subtitle {
+    font-size: 1.5rem;
+}
+
+/* ===== КОНТАКТНЫЕ КАРТОЧКИ ===== */
+.contact-card {
+    background: white;
+    border: 2px solid #bcf1f9;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+    font-size: 3rem;
+    color: #007FFF;
+}
+
+.contact-card .card-title {
+    font-size: 1.5rem;
+    color: #002f5b;
+    margin-bottom: 1rem;
+}
+
+.contact-card .card-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+}
+
+/* ===== ФОРМА ОБРАТНОЙ СВЯЗИ ===== */
+.contact-form-wrapper {
+    background: white;
+    border: 2px solid #bcf1f9;
+    border-radius: 10px;
+}
+
+.contact-form-wrapper h2 {
+    font-size: 2.2rem;
+    color: #002f5b;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #007FFF;
+    box-shadow: 0 0 0 0.2rem rgba(0, 127, 255, 0.25);
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+/* Кнопка отправки */
+.submit-btn {
+    background-color: #007FFF;
+    border-color: #007FFF;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #004891;
+    border-color: #004891;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 72, 145, 0.3);
+}
+
+/* ===== ФУТЕР ===== */
+.footer {
+    background-color: #1E213D;
+    padding: 3rem 0;
+    color: #A2ADD0;
+}
+
+.footer-contact-btn {
+    border: 2px solid #A2ADD0;
+    color: #A2ADD0;
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.2s;
+}
+
+.footer-contact-btn:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-small {
+    font-size: 0.8rem;
+    color: #8a8fb5;
+    margin-top: 1.5rem;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+    
+    .navbar {
+        height: 60px;
+    }
+    
+    .contacts-title {
+        font-size: 2.5rem;
+    }
+    
+    .contacts-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .contact-card .card-title {
+        font-size: 1.3rem;
+    }
+    
+    .contact-card .card-text {
+        font-size: 1rem;
+    }
+    
+    .contact-form-wrapper {
+        padding: 2rem !important;
+    }
+    
+    .contact-form-wrapper h2 {
+        font-size: 1.8rem;
+    }
+    
+    .form-group label {
+        font-size: 1rem;
+    }
+    
+    .form-control {
+        font-size: 1rem;
+        padding: 0.6rem 0.8rem;
+    }
+    
+    .submit-btn {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contacts-title {
+        font-size: 2rem;
+    }
+    
+    .navbar-brand span {
+        font-size: 0.9rem;
+    }
+    
+    .contact-icon {
+        font-size: 2.5rem;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 400px) {
+    .contacts-title {
+        font-size: 1.7rem;
+    }
+    
+    .contacts-subtitle {
+        font-size: 1rem;
+    }
+    
+    .contact-card {
+        padding: 1.5rem !important;
+    }
+}
